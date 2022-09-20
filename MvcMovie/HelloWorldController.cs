@@ -7,9 +7,9 @@ public class HelloWorldController : Controller
 {
     // 
     // GET: /HelloWorld/
-    public string Index(string name, int ID= 1)
+    public IActionResult Index()
     {
-        return HtmlEncoder.Default.Encode($"Hello {name}, ID : {ID}");
+       return View();
     }
     
     // Get: /HelloWorld/Welcome
